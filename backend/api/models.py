@@ -8,6 +8,14 @@ class ProjectManager(models.Model):
     def __str__(self) -> str:
         return self.name
 
+class TestModel(models.Model):
+    name=models.CharField(unique=True,max_length=100)
+    create=models.DateTimeField(auto_now_add=True)
+    modified=models.DateTimeField(auto_now=True)
+
+    def __str__(self) -> str:
+        return self.name
+
 class Project(models.Model):
     name=models.CharField(unique=True,max_length=100)
     projectmanager=models.ForeignKey(ProjectManager,on_delete=models.CASCADE,blank=True,null=True)
