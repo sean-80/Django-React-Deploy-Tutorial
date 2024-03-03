@@ -77,4 +77,4 @@ jobs:
         with:
           app-name: 'django-react-app-backend'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_C8F03205651241E98C45ABA20D7578BE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0F9BBAFEC6B14EC293292C454F1210FE }}
