@@ -1,0 +1,2 @@
+[confg]
+SCM_DO_BUILD_DURING_DEOPLOYMENT=true
